@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 // 💻 Check out my GitHub: https://github.com/Amitmasram
 // 👔 Connect with me on LinkedIn: https://www.linkedin.com/in/amit-masram/
 
-// Importing the RowWidget from the 'row.dart' file
-import 'package:flutterwidgets/day1/row.dart';
+import 'package:flutterwidgets/day2/listtile_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,9 +15,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // MaterialApp widget to set up the Flutter application
-    return MaterialApp(
+    return const MaterialApp(
       // Home widget is set to the RowWidget from the 'row.dart' file
-      home: RowWidget(),
+      home: ListTileWidget(),
     );
   }
 }
