@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutterwidgets/day3/tapBar.dart';
+
 // 🚀 Follow me on Instagram: https://www.instagram.com/skytech_28/
 // 💻 Check out my GitHub: https://github.com/Amitmasram
 // 👔 Connect with me on LinkedIn: https://www.linkedin.com/in/amit-masram/
 
-import 'package:flutterwidgets/day2/listtile_widget.dart';
-
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 /// The main application widget.
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     // MaterialApp widget to set up the Flutter application
     return const MaterialApp(
-      // Home widget is set to the RowWidget from the 'row.dart' file
-      home: ListTileWidget(),
+      home: MyTabBarExample(),
     );
   }
 }
