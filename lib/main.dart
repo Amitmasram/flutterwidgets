@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutterwidgets/day7/themeData.dart';
+import 'package:flutterwidgets/day8/radio.dart';
 
 // 🚀 Follow me on Instagram: https://www.instagram.com/skytech_28/
 // 💻 Check out my GitHub: https://github.com/Amitmasram
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // MaterialApp widget to set up the Flutter application
     return const MaterialApp(
-      home: MyThemedApp(),
+      home: MyRadioGroup(),
     );
   }
 }
