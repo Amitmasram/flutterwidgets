@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 /*
 *-The Scaffold widget provides the overall structure of the screen.
 *-The AppBar is set as the appBar property of the Scaffold.
@@ -13,36 +12,36 @@ import 'package:flutter/material.dart';
 
 */
 
-
-
 class Appbarwidget extends StatelessWidget {
+  const Appbarwidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My App'),
+        title: const Text('My App'),
         leading: IconButton(
-          icon: Icon(Icons.menu),
+          icon: const Icon(Icons.menu),
           onPressed: () {
             // Handle menu button press
           },
         ),
         actions: [
           IconButton(
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
             onPressed: () {
               // Handle search button press
             },
           ),
           IconButton(
-            icon: Icon(Icons.settings),
+            icon: const Icon(Icons.settings),
             onPressed: () {
               // Handle settings button press
             },
           ),
         ],
       ),
-      body: Center(
+      body: const Center(
         child: Text('Welcome to My App!'),
       ),
     );

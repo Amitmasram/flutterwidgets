@@ -4,6 +4,7 @@ class MyTabbedPage extends StatefulWidget {
   const MyTabbedPage({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _MyTabbedPageState createState() => _MyTabbedPageState();
 }
 
@@ -29,11 +30,11 @@ class _MyTabbedPageState extends State<MyTabbedPage>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('TabBarView Example'),
+        title: const Text('TabBarView Example'),
         // In this example: TabBar is used to display the tabs at the top of the screen.
         bottom: TabBar(
           controller: _tabController,
-          tabs: [
+          tabs: const [
             Tab(text: 'Tab 1'),
             Tab(text: 'Tab 2'),
             Tab(text: 'Tab 3'),
@@ -44,7 +45,7 @@ class _MyTabbedPageState extends State<MyTabbedPage>
       // The content is provided as a list of widgets, and the selected content is displayed based on the active tab.
       body: TabBarView(
         controller: _tabController,
-        children: [
+        children: const [
           // In this example: Content for Tab 1
           Center(child: Text('Content for Tab 1')),
 

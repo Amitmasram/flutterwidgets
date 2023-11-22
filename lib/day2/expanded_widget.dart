@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class ExpandedWidget extends StatelessWidget {
@@ -17,7 +16,7 @@ class ExpandedWidget extends StatelessWidget {
               color: Colors.blue,
               height: 100.0,
               width: double.infinity,
-              child: Center(
+              child: const Center(
                 child: Text(
                   'Header',
                   style: TextStyle(color: Colors.white, fontSize: 24.0),
@@ -27,7 +26,7 @@ class ExpandedWidget extends StatelessWidget {
             Expanded(
               child: Container(
                 color: Colors.green,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Expanded Widget Takes Up Remaining Space',
                     style: TextStyle(color: Colors.white, fontSize: 18.0),
@@ -39,7 +38,7 @@ class ExpandedWidget extends StatelessWidget {
               color: Colors.blue,
               height: 50.0,
               width: double.infinity,
-              child: Center(
+              child: const Center(
                 child: Text(
                   'Footer',
                   style: TextStyle(color: Colors.white, fontSize: 20.0),

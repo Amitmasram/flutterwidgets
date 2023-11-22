@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
 
-
 class RowWidget extends StatelessWidget {
+  const RowWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Row Example'),
+        title: const Text('Row Example'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Icon(Icons.star, size: 50.0, color: Colors.yellow),
-            Text(
+            const Icon(Icons.star, size: 50.0, color: Colors.yellow),
+            const Text(
               'Hello',
               style: TextStyle(fontSize: 24.0),
             ),
@@ -22,7 +23,7 @@ class RowWidget extends StatelessWidget {
               onPressed: () {
                 // Handle button press
               },
-              child: Text('Press Me'),
+              child: const Text('Press Me'),
             ),
           ],
         ),
@@ -30,9 +31,6 @@ class RowWidget extends StatelessWidget {
     );
   }
 }
-
-
-
 
 ///----- Row Basic Design with widget
 
@@ -46,11 +44,13 @@ The third section is an ElevatedButton for an action (e.g., Follow).
 */
 
 class RowWidgetDesign extends StatelessWidget {
+  const RowWidgetDesign({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Row Design Example'),
+        title: const Text('Row Design Example'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -58,13 +58,13 @@ class RowWidgetDesign extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Avatar
-            CircleAvatar(
+            const CircleAvatar(
               radius: 40.0,
               backgroundImage: AssetImage('assets/avatar.jpg'),
             ),
-            SizedBox(width: 16.0),
+            const SizedBox(width: 16.0),
             // User Information
-            Column(
+            const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
@@ -78,13 +78,13 @@ class RowWidgetDesign extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(width: 16.0),
+            const SizedBox(width: 16.0),
             // Action Button
             ElevatedButton(
               onPressed: () {
                 // Handle button press
               },
-              child: Text('Follow'),
+              child: const Text('Follow'),
             ),
           ],
         ),

@@ -15,23 +15,25 @@ In this example:
 */
 
 class Scaffoldwidget extends StatelessWidget {
+  const Scaffoldwidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My App'),
+        title: const Text('My App'),
       ),
-      body: Center(
+      body: const Center(
         child: Text('Welcome to My App!'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           // Handle the press of the floating action button
         },
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',

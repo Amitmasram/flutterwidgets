@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 ///---ListView.builder: Example ----
@@ -13,8 +14,6 @@ How it works: ListView.builder creates items on-the-fly as the user scrolls.
 
 */
 
-
-
 class MyListView extends StatelessWidget {
   final List<String> items = List.generate(50, (index) => 'Item $index');
 
@@ -24,7 +23,7 @@ class MyListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ListView Example'),
+        title: const Text('ListView Example'),
       ),
       body: ListView.builder(
         // Properties of ListView.builder
@@ -33,13 +32,14 @@ class MyListView extends StatelessWidget {
           return Card(
             // Properties of Card
             elevation: 5.0,
-            margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
+            margin:
+                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
             child: ListTile(
               // Properties of ListTile
-              contentPadding: EdgeInsets.all(10.0),
+              contentPadding: const EdgeInsets.all(10.0),
               title: Text(
                 items[index],
-                style: TextStyle(fontSize: 18.0),
+                style: const TextStyle(fontSize: 18.0),
               ),
               subtitle: Text('Subtitle for Item $index'),
               leading: CircleAvatar(
@@ -47,17 +47,21 @@ class MyListView extends StatelessWidget {
                 backgroundColor: Colors.blue,
                 child: Text(
                   (index + 1).toString(),
-                  style: TextStyle(color: Colors.white),
+                  style: const TextStyle(color: Colors.white),
                 ),
               ),
-              trailing: Icon(Icons.arrow_forward),
+              trailing: const Icon(Icons.arrow_forward),
               onTap: () {
                 // Handle item tap
-                print('Tapped on: ${items[index]}');
+                if (kDebugMode) {
+                  print('Tapped on: ${items[index]}');
+                }
               },
               onLongPress: () {
                 // Handle long press on item
-                print('Long pressed on: ${items[index]}');
+                if (kDebugMode) {
+                  print('Long pressed on: ${items[index]}');
+                }
               },
             ),
           );
@@ -93,7 +97,9 @@ class MyCustomListView extends StatelessWidget {
             return ListTile(
               title: Text(items[index]),
               onTap: () {
-                print('Tapped on: ${items[index]}');
+                if (kDebugMode) {
+                  print('Tapped on: ${items[index]}');
+                }
               },
             );
           },
@@ -126,16 +132,18 @@ class MySeparatedListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Separated ListView Example'),
+        title: const Text('Separated ListView Example'),
       ),
       body: ListView.separated(
         itemCount: items.length,
-        separatorBuilder: (BuildContext context, int index) => Divider(),
+        separatorBuilder: (BuildContext context, int index) => const Divider(),
         itemBuilder: (BuildContext context, int index) {
           return ListTile(
             title: Text(items[index]),
             onTap: () {
-              print('Tapped on: ${items[index]}');
+              if (kDebugMode) {
+                print('Tapped on: ${items[index]}');
+              }
             },
           );
         },

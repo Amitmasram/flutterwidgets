@@ -23,7 +23,7 @@ class _MyAnimationPageState extends State<MyAnimationPage>
     // Rotation Animation
     _rotationController = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 2),
+      duration: const Duration(seconds: 2),
     );
 
     _rotationAnimation =
@@ -46,7 +46,7 @@ class _MyAnimationPageState extends State<MyAnimationPage>
     // Scale Animation
     _scaleController = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
     );
 
     _scaleAnimation =
@@ -71,7 +71,7 @@ class _MyAnimationPageState extends State<MyAnimationPage>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Multiple Animations Example'),
+        title: const Text('Multiple Animations Example'),
       ),
       body: Center(
         child: Column(
@@ -81,14 +81,14 @@ class _MyAnimationPageState extends State<MyAnimationPage>
                 'Rotation Animation Value: ${_rotationAnimation.value.toStringAsFixed(2)}'),
             RotationTransition(
               turns: _rotationAnimation,
-              child: FlutterLogo(size: 100),
+              child: const FlutterLogo(size: 100),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Text(
                 'Scale Animation Value: ${_scaleAnimation.value.toStringAsFixed(2)}'),
             ScaleTransition(
               scale: _scaleAnimation,
-              child: FlutterLogo(size: 100),
+              child: const FlutterLogo(size: 100),
             ),
           ],
         ),

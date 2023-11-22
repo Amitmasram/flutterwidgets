@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 /*
@@ -23,7 +24,9 @@ import 'package:flutter/material.dart';
 */
 
 class InkwellPage extends StatelessWidget {
-  const InkwellPage({Key? key});
+  const InkwellPage({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -36,31 +39,45 @@ class InkwellPage extends StatelessWidget {
           child: InkWell(
             onTap: () {
               // Handle tap event
-              print('InkWell tapped!');
+              if (kDebugMode) {
+                print('InkWell tapped!');
+              }
             },
             onDoubleTap: () {
               // Handle double tap event
-              print('InkWell double-tapped!');
+              if (kDebugMode) {
+                print('InkWell double-tapped!');
+              }
             },
             onLongPress: () {
               // Handle long press event
-              print('InkWell long-pressed!');
+              if (kDebugMode) {
+                print('InkWell long-pressed!');
+              }
             },
             onTapCancel: () {
               // Handle tap cancellation
-              print('InkWell tap canceled!');
+              if (kDebugMode) {
+                print('InkWell tap canceled!');
+              }
             },
             onTapDown: (TapDownDetails details) {
               // Handle tap down event
-              print('InkWell tap down at ${details.localPosition}');
+              if (kDebugMode) {
+                print('InkWell tap down at ${details.localPosition}');
+              }
             },
             onTapUp: (TapUpDetails details) {
               // Handle tap up event
-              print('InkWell tap up at ${details.localPosition}');
+              if (kDebugMode) {
+                print('InkWell tap up at ${details.localPosition}');
+              }
             },
             onHighlightChanged: (bool value) {
               // Handle highlight change event
-              print('InkWell highlight changed: $value');
+              if (kDebugMode) {
+                print('InkWell highlight changed: $value');
+              }
             },
             customBorder: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10.0),

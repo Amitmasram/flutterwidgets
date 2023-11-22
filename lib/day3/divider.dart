@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 // This is an example widget demonstrating the use of ListTile and Divider in a ListView.
@@ -52,11 +53,13 @@ class MessageList extends StatelessWidget {
                 color: bgColor,
                 child: ListTile(
                   title: Text('Message $index'),
-                  subtitle: Text('Tap to view details'),
+                  subtitle: const Text('Tap to view details'),
                   onTap: () {
                     // Handle tap action
                     // For now, let's print a message to the console
-                    print('Tapped on Message $index');
+                    if (kDebugMode) {
+                      print('Tapped on Message $index');
+                    }
                   },
                 ),
               ),

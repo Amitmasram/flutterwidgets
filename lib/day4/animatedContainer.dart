@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 
 ///--- AnimatedContainer: Example ---
@@ -12,6 +13,7 @@ class AnimatedContainerPage extends StatefulWidget {
   const AnimatedContainerPage({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _AnimatedContainerPageState createState() => _AnimatedContainerPageState();
 }
 
@@ -24,25 +26,25 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AnimatedContainer Example'),
+        title: const Text('AnimatedContainer Example'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             AnimatedContainer(
-              duration: Duration(seconds: 1),
+              duration: const Duration(seconds: 1),
               width: _containerWidth,
               height: _containerHeight,
               color: _containerColor,
-              child: Center(
+              child: const Center(
                 child: Text(
                   'Flutter',
                   style: TextStyle(color: Colors.white),
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 // Update the container properties to trigger the animation
@@ -52,7 +54,7 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
                   _containerColor = Colors.red;
                 });
               },
-              child: Text('Animate Container'),
+              child: const Text('Animate Container'),
             ),
           ],
         ),

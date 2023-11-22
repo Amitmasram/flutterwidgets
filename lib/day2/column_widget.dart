@@ -8,7 +8,7 @@ class ColumnWidget extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Column Widget Example'),
+          title: const Text('Column Widget Example'),
         ),
         body: const Center(
           child: Column(
@@ -28,29 +28,29 @@ class ColumnWidget extends StatelessWidget {
 
 /// --------------------------------------------------------------
 /// [ParallaxBackgroundtwo]
-/// 
+///
 /// A Flutter widget demonstrating a captivating parallax effect
 /// with an overlaying text on a cool background image.
-/// 
+///
 /// **Explanation:**
-/// 
+///
 /// - **Image.network:** Loads an image from a provided URL.
 ///   Replace the URL with the actual link to your captivating
 ///   background image.
-/// 
+///
 /// - **Stack:** A powerful widget that enables the overlaying
 ///   of multiple children on the screen, creating visually
 ///   stunning effects.
-/// 
+///
 /// - **Background Image:** Positioned at the bottom of the stack,
 ///   covering the entire screen. The `fit: BoxFit.cover` property
 ///   ensures the image spans the screen, and `height: double.infinity,
 ///   width: double.infinity` makes it occupy the full height and width.
-/// 
+///
 /// - **Content Overlay:** Centered within the stack, containing
 ///   a stylish text widget. This text is overlaid on top of the
 ///   background image, creating a visually appealing effect.
-/// 
+///
 /// This example achieves a parallax effect as the background image
 /// remains fixed while the overlay scrolls, resulting in a cool
 /// and engaging user interface. Remember to replace the image URL
@@ -87,8 +87,7 @@ class ParallaxBackgroundColumn extends StatelessWidget {
   }
 }
 
-
-//// ----2 
+//// ----2
 
 class ParallaxBackgroundtwo extends StatelessWidget {
   const ParallaxBackgroundtwo({super.key});
@@ -127,13 +126,14 @@ class ParallaxBackgroundtwo extends StatelessWidget {
               // Handle button press
             },
             style: ElevatedButton.styleFrom(
+              // ignore: deprecated_member_use
               primary: Colors.blue,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8.0),
               ),
             ),
-            child: Padding(
-              padding: const EdgeInsets.all(12.0),
+            child: const Padding(
+              padding: EdgeInsets.all(12.0),
               child: Text(
                 'Press Me!',
                 style: TextStyle(
