@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutterwidgets/day9/dataTable.dart';
+
+import 'package:flutterwidgets/day10/nestedScrollView.dart';
 
 // 🚀 Follow me on Instagram: https://www.instagram.com/skytech_28/
 // 💻 Check out my GitHub: https://github.com/Amitmasram
@@ -16,8 +17,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // MaterialApp widget to set up the Flutter application
-    return const MaterialApp(
-      home: MyDataTable(),
-    );
+    return const MaterialApp(home: MyNestedScrollViewCool());
   }
 }
