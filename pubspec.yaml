@@ -38,6 +38,7 @@ dependencies:
   expandable: ^5.0.1
   flutter_datetime_picker: ^1.5.1
   intl: ^0.18.1
+  provider: ^6.1.1
 
 dev_dependencies:
   flutter_test:
