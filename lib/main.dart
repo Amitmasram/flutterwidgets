@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutterwidgets/day19/overlay.dart';
+import 'package:flutterwidgets/day14/animatedOpacity.dart';
+import 'package:flutterwidgets/day20/animatedPhysicalModal.dart';
 
 // 🚀 Follow me on Instagram: https://www.instagram.com/skytech_28/
 // 💻 Check out my GitHub: https://github.com/Amitmasram
@@ -17,6 +17,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // MaterialApp widget to set up the Flutter application
-    return const MaterialApp(home: OverLayEx());
+    return const MaterialApp(home: AnimatedPhysicalModalEx());
   }
 }
