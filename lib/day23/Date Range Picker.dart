@@ -26,8 +26,8 @@ class _MyDateRangePickerExState extends State<MyDateRangePickerEx> {
     if (picked != null) {
       setState(() {
         // ignore:package:flutterwidgets/day23/Date%20Range%20Picker.dart
-        _startDate = picked.start ?? _startDate;
-        _endDate = picked.end ?? _endDate;
+        _startDate = picked.start;
+        _endDate = picked.end;
       });
     }
   }
