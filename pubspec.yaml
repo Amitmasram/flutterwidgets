@@ -40,6 +40,7 @@ dependencies:
   intl: ^0.18.1
   provider: ^6.1.1
   http: ^1.1.0
+  autocomplete_textfield: ^2.0.1
 
 dev_dependencies:
   flutter_test:
