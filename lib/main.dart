@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterwidgets/day34/slider.dart';
+import 'package:flutterwidgets/day35/spacer.dart';
 
 // 🚀 Follow me on Instagram: https://www.instagram.com/skytech_28/
 // 💻 Check out my GitHub: https://github.com/Amitmasram
@@ -16,6 +16,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // MaterialApp widget to set up the Flutter application
-    return const MaterialApp(home: SliderEx10());
+    return const MaterialApp(home: SpacerEx3());
   }
 }
