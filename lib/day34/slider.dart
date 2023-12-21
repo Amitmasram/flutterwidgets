@@ -878,6 +878,7 @@ class _WeatherAppState extends State<WeatherApp> {
   }
 
   Future<void> _updateWeather() async {
+    // ignore: unused_local_variable
     DateTime dateTime =
         DateTime.now().add(Duration(hours: _sliderValue.toInt()));
     Weather weather =
