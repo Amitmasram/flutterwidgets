@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterwidgets/day37/tween_animation_builder.dart';
-import 'package:flutterwidgets/day37/vertical_divider.dart';
+import 'package:flutterwidgets/day38/visiblity.dart';
 
 // 🚀 Follow me on Instagram: https://www.instagram.com/skytech_28/
 // 💻 Check out my GitHub: https://github.com/Amitmasram
@@ -17,6 +16,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // MaterialApp widget to set up the Flutter application
-    return const MaterialApp(home: VerticalDividerEx5());
+    return const MaterialApp(home: VisiblityEx3());
   }
 }
