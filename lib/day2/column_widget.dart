@@ -127,7 +127,7 @@ class ParallaxBackgroundtwo extends StatelessWidget {
             },
             style: ElevatedButton.styleFrom(
               // ignore: deprecated_member_use
-              primary: Colors.blue,
+              backgroundColor: Colors.blue,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8.0),
               ),

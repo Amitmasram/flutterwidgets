@@ -19,7 +19,7 @@ class TextButtonEx extends StatelessWidget {
               print('TextButton pressed');
             },
             style: TextButton.styleFrom(
-              primary: Colors.blue, // Text color
+              foregroundColor: Colors.blue,
               backgroundColor: Colors.white, // Button background color
               textStyle: const TextStyle(
                 fontSize: 16.0,
@@ -117,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                     print('Button 1 pressed');
                   },
                   style: TextButton.styleFrom(
-                    primary: Colors.blue,
+                    foregroundColor: Colors.blue,
                     backgroundColor: Colors.white,
                   ),
                   child: const Text('Button 1'),
@@ -129,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                     print('Button 2 pressed');
                   },
                   style: TextButton.styleFrom(
-                    primary: Colors.red,
+                    foregroundColor: Colors.red,
                     backgroundColor: Colors.white,
                   ),
                   child: const Text('Button 2'),
@@ -241,7 +241,7 @@ class _MyHomePagelState extends State<MyHomePagel> {
                   print('Button 1 pressed');
                 },
                 style: TextButton.styleFrom(
-                  primary: Colors.blue,
+                  foregroundColor: Colors.blue,
                   backgroundColor: Colors.white,
                 ),
                 child: const Text('Button 1'),
@@ -253,7 +253,7 @@ class _MyHomePagelState extends State<MyHomePagel> {
                   print('Button 2 pressed');
                 },
                 style: TextButton.styleFrom(
-                  primary: Colors.red,
+                  foregroundColor: Colors.red,
                   backgroundColor: Colors.white,
                 ),
                 child: const Text('Button 2'),

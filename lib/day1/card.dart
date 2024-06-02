@@ -32,7 +32,7 @@ class MyCardWithTextButtonPage extends StatelessWidget {
                     }
                   },
                   style: TextButton.styleFrom(
-                    primary: Colors.blue, // Customize text color
+                    foregroundColor: Colors.blue, // Customize text color
                   ),
                   child: const Text('Click Me'),
                 ),

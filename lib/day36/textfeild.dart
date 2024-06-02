@@ -435,8 +435,8 @@ class _LoginScreenmState extends State<LoginScreenm>
                             print('Login Successful!');
                           },
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.blue,
-                            onPrimary: Colors.white,
+                            foregroundColor: Colors.white,
+                            backgroundColor: Colors.blue,
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 16, vertical: 12),
                             shape: RoundedRectangleBorder(
